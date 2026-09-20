@@ -51,15 +51,6 @@ header p {
 	font-size: 16px;
 }
 
-header label {
-	display: block;
-	margin-top: 20px;
-}
-
-header select {
-	color: #1f2937;
-}
-
 /* Keep the timeline cards in one horizontal row that can be scrolled. */
 section.timeline {
 	display: flex;
