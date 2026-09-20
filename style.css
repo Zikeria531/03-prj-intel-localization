@@ -51,8 +51,17 @@ header p {
 	font-size: 16px;
 }
 
+header label {
+	display: block;
+	margin-top: 20px;
+}
+
+header select {
+	color: #1f2937;
+}
+
 /* Keep the timeline cards in one horizontal row that can be scrolled. */
-section {
+section.timeline {
 	display: flex;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -62,7 +71,7 @@ section {
 }
 
 /* Give every timeline item the same simple card appearance. */
-section > div {
+section.timeline > div {
 	flex: 0 0 calc((100% - 48px) / 4);
 	position: relative;
 	padding: 14px;
@@ -74,7 +83,7 @@ section > div {
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-section .timeline-image {
+section.timeline .timeline-image {
 	display: block;
 	width: 100%;
 	height: 105px;
@@ -84,29 +93,29 @@ section .timeline-image {
 }
 
 /* Add a small lift when someone points at a card. */
-section > div:hover {
+section.timeline > div:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 20px rgba(31, 41, 55, 0.14);
 }
 
-section > div:focus {
+section.timeline > div:focus {
 	outline: 3px solid #00a88e;
 	outline-offset: 3px;
 }
 
-section h2 {
+section.timeline h2 {
 	margin-bottom: 0;
 	color: #0f7dc2;
 	font-size: 20px;
 }
 
-section h3 {
+section.timeline h3 {
 	margin-bottom: 4px;
 	color: #0f7dc2;
 	font-size: 14px;
 }
 
-section p {
+section.timeline p {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -126,10 +135,39 @@ section p {
 	transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-section > div:hover p,
-section > div:focus p {
+section.timeline > div:hover p,
+section.timeline > div:focus p {
 	opacity: 1;
 	visibility: visible;
+}
+
+/* Keep the Bootstrap cards readable with a clear title and description. */
+.focus-section {
+	text-align: center;
+}
+
+.focus-section h2 {
+	margin-bottom: 24px;
+	color: #0f7dc2;
+	font-size: 28px;
+}
+
+.focus-section .row > div > div {
+	text-align: start;
+	background-color: white;
+	box-shadow: 0 4px 12px rgba(31, 41, 55, 0.08);
+}
+
+.focus-section h3 {
+	margin-bottom: 12px;
+	color: #0f7dc2;
+	font-size: 20px;
+}
+
+.focus-section p {
+	color: #52606d;
+	font-size: 15px;
+	line-height: 1.6;
 }
 
 /* Style the instruction below the timeline. */
@@ -154,12 +192,12 @@ body > p {
 		font-size: 16px;
 	}
 
-	section {
+	section.timeline {
 		display: block;
 		padding: 32px 16px 16px;
 	}
 
-	section > div {
+	section.timeline > div {
 		width: 100%;
 		margin-bottom: 24px;
 	}
