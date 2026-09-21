@@ -170,6 +170,17 @@ section.timeline > div:focus p {
   font-size: 24px;
 }
 
+.footer-link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: #8ed1f5;
+	text-decoration: underline;
+}
+
 /* Style the instruction below the timeline. */
 body > p { 
 	padding: 16px 24px 48px;
