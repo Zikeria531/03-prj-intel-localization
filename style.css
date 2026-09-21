@@ -161,6 +161,15 @@ section.timeline > div:focus p {
 	line-height: 1.6;
 }
 
+/* Keep the simple email form compact and centered. */
+.newsletter-form {
+	max-width: 400px;
+}
+
+#newsletter-heading {
+  font-size: 24px;
+}
+
 /* Style the instruction below the timeline. */
 body > p { 
 	padding: 16px 24px 48px;
