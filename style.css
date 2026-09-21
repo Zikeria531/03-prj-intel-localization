@@ -102,7 +102,7 @@ section.timeline h2 {
 
 section.timeline h3 {
 	margin-bottom: 4px;
-	color: #0f7dc2;
+	color: #141618;
 	font-size: 14px;
 }
 
@@ -141,6 +141,11 @@ section.timeline > div:focus p {
 	margin-bottom: 24px;
 	color: #0f7dc2;
 	font-size: 28px;
+}
+
+.heading-icon {
+	margin-inline-end: 8px;
+	font-size: 0.9em;
 }
 
 .focus-section .row > div > div {
